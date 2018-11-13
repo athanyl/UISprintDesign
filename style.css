@@ -1,0 +1,155 @@
+body {
+  min-height: 100vh;
+	background-image:  url("bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+	color:black;
+}
+a:visited {
+	color:black;	
+}
+/* MENU */
+.nav {
+	display: flex;
+ 	flex-direction: row;
+  justify-content: space-between; 	
+}
+
+.nav li {
+	display: inline;
+	justify-content: space-between;	
+}
+
+nav .nav-btn {
+	text-decoration: none;
+	cursor: default;
+	color: black;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border:black solid 1px;
+	margin-left: 7px;
+	margin-right: 7px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 1px 0 0;
+	text-transform: uppercase;
+}
+
+nav .nav-btn:hover {
+	border:black solid 2px;
+	margin-left: 6px;
+	margin-right: 6px;	
+}
+
+/* PROFIL */
+
+.profil {
+	display: flex;	
+	flex-direction: column;
+	align-items: center;	
+}
+
+.main {
+	background: white;
+	align-items: flex-start;
+	border:black solid 1px;	
+	width: 400px;
+	height: 200px;
+	margin-top: 10px;
+	padding-left: 12px;
+	padding-right: 12px;	
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+/* PROFIL PIC */
+
+.profil-pic {
+  width: 200px;
+  height: 200px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  background-image: url(moi.jpg);
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.profil-pic:hover {
+	opacity: 0.85;
+}
+
+
+/* INTERN TAB */
+
+.tab div {
+    display: none;
+}
+
+.tab div:target {
+  display: block;
+}
+
+.nav-item {
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.nav-link {
+	text-decoration: none;
+}
+.nav-link:active {
+	text-decoration: underline;
+}
+
+/* FOOTER */
+
+.footer {
+	display: flex;
+	flex-direction: row-reverse;
+	position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* BUTTON */
+
+.button {
+	text-decoration: none;
+	background-color: #685762;
+	color: #ffffff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	margin-left: 7px;
+	margin-right: 7px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 1px 0 0;
+	text-transform: uppercase;
+	transition-delay: 0.2s;
+}
+
+
+.button:hover {
+	color: black;
+	border: transparent solid 1px;	
+	margin-left: 6px;
+	margin-right: 6px;		
+}
